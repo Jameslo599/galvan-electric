@@ -117,7 +117,7 @@ input, select, textarea {
 		-webkit-transition: color .25s ease-in-out;
 		-ms-transition: color .25s ease-in-out;
 		transition: color .25s ease-in-out;
-		text-decoration: underline;
+		text-decoration: none;
 		color: #717479;
 	}
 
@@ -280,7 +280,7 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 33.33333%;
+			width: 50%;
 		}
 
 		.row > .off-4 {
@@ -1369,7 +1369,7 @@ input, select, textarea {
 				}
 
 					.row.gtr-50 > * {
-						padding: 15px 0 0 15px;
+						padding: 30px 0 0 15px;
 					}
 
 					.row.gtr-50.gtr-uniform {
@@ -1449,7 +1449,7 @@ input, select, textarea {
 
 	header.style1 {
 		text-align: center;
-		padding: 3em 0 3em 0;
+		padding: 5em 0 3em;
 	}
 
 		header.style1 h2 {
@@ -1620,7 +1620,7 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 2em 0;
+            height: 50vh;
 		}
 
 /* Button */
@@ -1646,7 +1646,6 @@ input, select, textarea {
 		outline: 0;
 		cursor: pointer;
 		font-size: 0.9em;
-		min-width: 12em;
 		height: 4em;
 		line-height: 4em;
 	}
@@ -1665,7 +1664,6 @@ input, select, textarea {
 		button.large,
 		.button.large {
 			font-size: 1em;
-			min-width: 14em;
 		}
 
 		input[type="button"].style1,
@@ -2070,7 +2068,6 @@ input, select, textarea {
 		height: 24em;
 		background: url("../../images/banner.webp") center bottom;
 		background-size: cover;
-		padding: 0;
 	}
 
 		#header:before {
@@ -2084,13 +2081,14 @@ input, select, textarea {
 		}
 
 		.homepage #header {
-			height: 35em;
+			height: fit-content;
 		}
 
 /* Logo */
 
 	#logo {
 		width: 100%;
+        margin-top: 3em;
 		text-align: center;
 		position: relative;
 		top: 1.5em;
@@ -2421,8 +2419,8 @@ input, select, textarea {
 			color: inherit;
 		}
 
-			#copyright a:hover {
-				color: #fff;
+			#copyright a:hover, #copyright span:hover {
+				color: #fcc200;
 			}
 
 /* XLarge */
@@ -2458,7 +2456,7 @@ input, select, textarea {
 		/* Logo */
 
 			#logo {
-				margin-top: -0.5em !important;
+				margin-top: 3vh !important;
 			}
 
 				#logo h1 {
@@ -2799,7 +2797,7 @@ input, select, textarea {
 			}
 
 			header.style1 {
-				padding: 0 0 1em 0;
+				padding: 4em 0 3em 0;
 			}
 
 				header.style1 h2 {
@@ -2822,7 +2820,7 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 				font-size: 1em;
-				max-width: 30em;
+				max-width: 20em;
 				margin: 0 auto;
 			}
 
@@ -2895,7 +2893,7 @@ input, select, textarea {
 			}
 
 				.homepage #header {
-					height: 20em;
+					height: fit-content;
 				}
 
 		/* Logo */
@@ -3005,8 +3003,28 @@ input, select, textarea {
     nav a:hover {
         color: #fcc200 !important;
     }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+    ul.intro li {
+        margin: 15px 0;
+    }
+    .opaque {
+        background: #a37d2c00 url("images/overlay.png");
+        color: #fff;
+        border: 3px solid #a37d2c;
+    }
+    .opaque:hover {
+        background: #a37d2c url("images/overlay.png");
+    }
+
     .owner {
-        text-decoration: underline;
+        border-bottom: 3px solid;
+    }
+    .dot-line{
+        border-bottom: 2px dotted #fcc200;
     }
     .yellow {
         color: #fcc200;
@@ -3041,6 +3059,9 @@ input, select, textarea {
             margin: 0 auto;
             width: 90%;
         }
+        .image.featured {
+            height: 40vh;
+        }
         #footer header.style1 h2 {
             font-size: 1.5em;
         }
@@ -3049,5 +3070,14 @@ input, select, textarea {
 
         .button {
             padding: 0 2.25em;
+            min-width: 23em;
+        }
+        .button.large{
+            min-width: 23em;
+        }
+        input[type="button"], input[type="submit"], 
+        input[type="reset"], button, 
+        .button {
+            min-width: 10em;
         }
     }
