@@ -2374,7 +2374,7 @@ input, select, textarea {
 		}
 
 			#footer .feature-list section {
-				border-top-color: rgba(255, 255, 255, 0.05);
+				border-top-color: #A37E2C;
 			}
 
 			#footer .feature-list h3:before {
@@ -3018,6 +3018,7 @@ input, select, textarea {
         color: #eeeeee;
         font-weight: 500;
     }
+    .feature-list
     #copyright a:hover, #footer .feature-list a:hover {
         color: #fcc200;
     }
