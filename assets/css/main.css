@@ -3002,6 +3002,9 @@ input, select, textarea {
 	}
 
     /* Custom Code */
+    nav a:hover {
+        color: #fcc200 !important;
+    }
     .owner {
         text-decoration: underline;
     }
@@ -3034,12 +3037,13 @@ input, select, textarea {
             margin: 0 auto;
             width: 90%;
         }
-
+        #footer header.style1 h2 {
+            font-size: 1.5em;
+        }
     }
     @media screen and (min-width: 736px) {
 
         .button {
             padding: 0 2.25em;
         }
-
     }
