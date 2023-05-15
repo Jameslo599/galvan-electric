@@ -3021,6 +3021,9 @@ input, select, textarea {
     #copyright a:hover, #footer .feature-list a:hover {
         color: #fcc200;
     }
+    #copyright ul {
+        border: 0.5px dotted #fcc200;
+    }
     #copyright ul * {
         margin-bottom: 0;
     }
