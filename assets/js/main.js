@@ -1,7 +1,8 @@
 (function($) {
 
 	var	$window = $(window),
-		$body = $('body');
+		$body = $('body'),
+        $header = $('#header');
 
 	// Breakpoints.
 		breakpoints({
@@ -52,9 +53,22 @@
 					hideOnSwipe: true,
 					resetScroll: true,
 					resetForms: true,
-					side: 'left',
+					side: 'right',
 					target: $body,
 					visibleClass: 'navPanel-visible'
 				});
+
+    // Scrolly.
+		$('.scrolly').scrolly({
+			anchor: 'top',
+            offset: 50,
+		});
+
+		$('.scrolly-middle').scrolly({
+			anchor: 'middle',
+			offset: function() {
+				return $header.outerHeight() - 2;
+			}
+		});
 
 })(jQuery);
