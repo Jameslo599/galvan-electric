@@ -1851,6 +1851,11 @@ input, select, textarea {
 				padding-top: 0;
 			}
 
+            #payment-container {
+                display: flex;
+                justify-content: center;
+            }
+
 		}
 
 		.feature-list h3 {
@@ -3049,9 +3054,8 @@ input, select, textarea {
         background: #fff8eb url("images/overlay.png");
     }
     #map {
-        height: 40vh;
-        border: 10px solid rgba(183, 109, 19, 0.458);;
-
+        height: 60vh;
+        border: 10px solid rgba(183, 109, 19, 0.458);
     }
 
     .tiles h3:hover {
@@ -3150,6 +3154,7 @@ input, select, textarea {
 
 			.posts .image img {
 				width: 100%;
+                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
 			}
@@ -3227,6 +3232,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+
+            #map {
+                height: 40vh;
+            }
 
 			.posts > * {
 				width: 100%;
@@ -3408,7 +3417,8 @@ input, select, textarea {
             margin: 0;
         }
     }
-    @media screen and (min-width: 736px) {
+
+    @media screen and (min-width: 737px) {
 
         .button {
             padding: 0 2.25em;
@@ -3422,7 +3432,19 @@ input, select, textarea {
         .button {
             min-width: 10em;
         }
+
+        .intro {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            column-gap: 2em;
+        }
+        .intro > li:last-child {
+            width: 100%;
+        }
     }
+
     @media screen and (min-width: 1680px) {
 
         .posts .content {
