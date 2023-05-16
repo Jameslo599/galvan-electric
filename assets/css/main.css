@@ -3330,6 +3330,64 @@ input, select, textarea {
         padding-bottom: 0
     }
 
+    /* Contact Icons */
+
+	ul.contact-icons {
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.contact-icons li:before {
+			padding-left: 0;
+			margin-right: 1rem;
+		}
+
+    #footer .payment li {
+        margin-left: 0 !important;
+        padding-left: 0.5em;
+    }
+    #footer h4 {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    #footer h4::after {
+        content: '';
+        background-color: #ffffffba;
+        display: block;
+        height: 2px;
+        margin: 1rem auto 0;
+        width: 7rem;
+    }
+    #footer .preferred {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .offset {
+        padding-left: 0 !important;
+    }
+    .accepted {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .accepted span{
+        color: #BBB;
+        font-size: 0.75rem;
+    }
+    .accepted li:first-child {
+        width: 100%;
+    }
+    #footer .preferred, #footer .accepted {
+        border: none;
+        box-shadow: none;
+    }
+
     @media screen and (max-width: 736px) {
 
         #logo img {
@@ -3344,6 +3402,10 @@ input, select, textarea {
         }
         #footer header.style1 h2 {
             font-size: 1.5em;
+        }
+
+        #footer .preferred li, #footer .accepted li {
+            margin: 0;
         }
     }
     @media screen and (min-width: 736px) {
