@@ -1634,7 +1634,9 @@ input, select, textarea {
 		-webkit-transition: all .25s ease-in-out;
 		-ms-transition: all .25s ease-in-out;
 		transition: all .25s ease-in-out;
-		display: inline-block;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
 		background: #444;
 		text-align: center;
 		text-transform: uppercase;
