@@ -2819,7 +2819,9 @@ input, select, textarea {
 			input[type="reset"],
 			button,
 			.button {
-				display: block;
+				display: inline-flex;
+                justify-content: center;
+                align-items: center;
 				width: 100%;
 				font-size: 1em;
 				max-width: 20em;
