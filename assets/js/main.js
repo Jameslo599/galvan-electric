@@ -71,4 +71,114 @@
 			}
 		});
 
+        // Tiles.
+		var $tiles = $('.tiles > article'),
+        $wrapper = $('.service-wrapper');
+
+		$tiles.each(function() {
+
+			var $this = $(this),
+				$image = $this.find('.image'), $img = $image.find('img'),
+				$link = $this.find('.link'),
+				x;
+
+			// Link.
+				if ($link.length > 0) {
+
+					$link.on('click', function(event) {
+
+						var href = $link.attr('href');
+
+						// Prevent default.
+							event.stopPropagation();
+							event.preventDefault();
+
+						// Target blank?
+							if ($link.attr('target') == '_blank') {
+
+								// Open in new tab.
+									window.open(href);
+
+							}
+                            else if (href === '#contact') {
+                                location.href = href;
+                            }
+                            
+						// Otherwise ...
+							else {
+
+								// Start transitioning.
+									$this.addClass('is-transitioning');
+									$wrapper.addClass('is-transitioning');
+
+								// Redirect.
+									window.setTimeout(function() {
+										location.href = href;
+									}, 500);
+							}
+					});
+				}
+		});
+
+     // Fade in.
+		$('.fadeIn').scrollex({
+			top:		'30vh',
+			bottom:		'30vh',
+			delay:		20,
+			initialize:	function() {
+				$(this).addClass('is-inactive');
+			},
+			terminate:	function() {
+				$(this).removeClass('is-inactive');
+			},
+			enter:		function() {
+				$(this).removeClass('is-inactive');
+			}
+		});
+    // Fade in from left.
+		$('.fadeInLeft').scrollex({
+			top:		'30vh',
+			bottom:		'30vh',
+			delay:		20,
+			initialize:	function() {
+				$(this).addClass('is-inactive-left');
+			},
+			terminate:	function() {
+				$(this).removeClass('is-inactive-left');
+			},
+			enter:		function() {
+				$(this).removeClass('is-inactive-left');
+			}
+		});
+    // Fade in from bottom.
+		$('.fadeInBot').scrollex({
+			top:		'20vh',
+			bottom:		'20vh',
+			delay:		25,
+			initialize:	function() {
+				$(this).addClass('is-inactive-bottom');
+			},
+			terminate:	function() {
+				$(this).removeClass('is-inactive-bottom');
+			},
+			enter:		function() {
+				$(this).removeClass('is-inactive-bottom');
+			}
+		});
+    // Fade in without transform.
+		$('.fadeInOnly').scrollex({
+			top:		'15vh',
+			bottom:		'15vh',
+			delay:		25,
+			initialize:	function() {
+				$(this).addClass('is-inactive-passive');
+			},
+			terminate:	function() {
+				$(this).removeClass('is-inactive-passive');
+			},
+			enter:		function() {
+				$(this).removeClass('is-inactive-passive');
+			}
+		});
+
 })(jQuery);
