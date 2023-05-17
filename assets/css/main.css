@@ -3449,16 +3449,16 @@ input, select, textarea {
 
     /* Fade In */
     .fadeIn {
-        -moz-transition: opacity 0.5s ease-out, -moz-transform 0.5s ease-out;
-        -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
-        -ms-transition: opacity 0.5s ease-out, -ms-transform 0.5s ease-out;
-        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        -moz-transition: opacity 0.75s ease-out, -moz-transform 0.75s ease-out;
+        -webkit-transition: opacity 0.75s ease-out, -webkit-transform 0.75s ease-out;
+        -ms-transition: opacity 0.75s ease-out, -ms-transform 0.75s ease-out;
+        transition: opacity 0.75s ease-out, transform 0.75s ease-out;
     }
     .fadeInLeft {
-        -moz-transition: opacity 0.5s ease-out, -moz-transform 0.5s ease-out;
-        -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
-        -ms-transition: opacity 0.5s ease-out, -ms-transform 0.5s ease-out;
-        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        -moz-transition: opacity 0.75s ease-out, -moz-transform 0.75s ease-out;
+        -webkit-transition: opacity 0.75s ease-out, -webkit-transform 0.75s ease-out;
+        -ms-transition: opacity 0.75s ease-out, -ms-transform 0.75s ease-out;
+        transition: opacity 0.75s ease-out, transform 0.75s ease-out;
     }
     .fadeInBot {
         -moz-transition: opacity 0.5s ease-out, -moz-transform 0.5s ease-out;
