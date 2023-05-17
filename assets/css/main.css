@@ -2106,7 +2106,7 @@ input, select, textarea {
         -webkit-transition: opacity 1s ease-in-out;
         -ms-transition: opacity 1s ease-in-out;
         transition: opacity 1s ease-in-out;
-        z-index: 1;
+        z-index: 0;
 	}
 
 		#header:before {
@@ -3060,7 +3060,7 @@ input, select, textarea {
         background: #a37d2c url("images/overlay.png");
     }
     .title {
-        z-index: 2;
+        z-index: 10;
     }
 
     .owner {
