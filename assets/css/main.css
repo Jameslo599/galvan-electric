@@ -213,7 +213,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.container {
-				width: calc(100% - 40px);
+				width: calc(100% - 64px);
 			}
 
 		}
@@ -2099,7 +2099,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		position: relative;
-		height: 24em;
+		height: 31em;
 		background: url("../../images/banner.webp") center center;
 		background-size: cover;
         -moz-transition: opacity 1s ease-in-out;
@@ -3042,6 +3042,29 @@ input, select, textarea {
     /* Custom Code */
     nav a:hover {
         color: #fcc200 !important;
+    }
+    .drop-down {
+        background-color: #242730ba;
+    }
+    .drop-down li, .depth-1{
+        -moz-transition: -moz-filter 0.35s ease, -webkit-filter 0.35s ease, all 0.375s ease-out;
+        -webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, all 0.375s ease-out;
+        -ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, all 0.375s ease-out;
+        transition: filter 0.35s ease, -webkit-filter 0.35s ease, all 0.375s ease-out;
+        padding: 0.5em 0;
+        border-bottom: 1px solid #fcc200;
+    }
+        .drop-down li:hover {
+            background-color: #d68726e2;
+        }
+        .drop-down a:hover {
+            color: #ffffff !important;
+        }
+    .drop-down a{
+        border-top: 0;
+    }
+    .fa-chevron-down {
+        font-size: 0.75em;
     }
 
     .intro {
