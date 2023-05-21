@@ -2139,6 +2139,7 @@ input, select, textarea {
 			color: #fff;
 			font-size: 2em;
 			letter-spacing: 0.25em;
+            margin-bottom: 2em;
 		}
 
 		#logo p {
@@ -3523,7 +3524,7 @@ input, select, textarea {
     @media screen and (max-width: 736px) {
 
         #logo img {
-            width: 90%;
+            width: 100%;
         }
         #logo p {
             margin: 0 auto;
