@@ -2579,12 +2579,6 @@ input, select, textarea {
 				display: none;
 			}
 
-		/* Logo */
-
-			#logo {
-				top: 0;
-			}
-
 		/* Intro */
 
 			#intro p.style3 {
@@ -2928,7 +2922,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				height: 17em;
+				height: 23em;
 			}
 
 				.homepage #header {
