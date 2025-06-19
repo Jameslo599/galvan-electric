@@ -2517,7 +2517,7 @@ form input[type='tel']:focus,
 #footer header.style1 {
   padding-bottom: 6em;
   margin-bottom: 6em;
-  border-bottom: dashed 0.5px #fcc200;
+  border-bottom: solid 0.5px #fcc200;
 }
 
 #footer header.style1 h2 {
@@ -2546,7 +2546,7 @@ form input[type='tel']:focus,
   text-align: center;
   padding-top: 6em;
   margin-top: 6em;
-  border-top: dashed 1px #fcc200;
+  border-top: solid 1px #fcc200;
 }
 
 #copyright ul,
@@ -2651,7 +2651,7 @@ form input[type='tel']:focus,
   #footer header.style1 {
     padding-bottom: 4em;
     margin-bottom: 4em;
-    border-bottom: dashed 0.5px #fcc200;
+    border-bottom: solid 0.5px #fcc200;
   }
 
   /* Copyright */
