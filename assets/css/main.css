@@ -4257,3 +4257,32 @@ header.major h1 {
     min-height: 350px;
   }
 }
+
+#google-reviews {
+  background: #fff8eb url('images/overlay.png');
+  position: relative;
+  padding: 3em 0 3em;
+}
+#google-reviews > .edit {
+  z-index: 1000;
+  background: #fff8eb url('images/overlay.png');
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  bottom: 40px;
+}
+@media screen and (min-width: 737px) {
+  #google-reviews > .edit {
+    bottom: 40px;
+  }
+}
+@media screen and (min-width: 1270px) {
+  #google-reviews > .edit {
+    bottom: 40px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  #google-reviews > .edit {
+    bottom: 50px;
+  }
+}
